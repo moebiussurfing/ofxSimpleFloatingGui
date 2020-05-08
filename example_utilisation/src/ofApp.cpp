@@ -3,9 +3,9 @@
 //--------------------------------------------------------------
 void ofApp::setup() {
 	// load fonts
-	fontSmall.load("D:/PERSO/Fonts/overpass-mono/overpass-mono-regular.otf", 10);
-	fontLarge.load("D:/PERSO/Fonts/overpass-mono/overpass-mono-regular.otf", 12);
-	fontXLarge.load("D:/PERSO/Fonts/overpass-mono/overpass-mono-regular.otf", 14);
+	fontSmall.load("overpass-mono/overpass-mono-regular.otf", 10);
+	fontLarge.load("overpass-mono/overpass-mono-regular.otf", 12);
+	fontXLarge.load("overpass-mono/overpass-mono-regular.otf", 14);
 
 	// colors
 	bgColor = ofColor(237, 240, 239);
@@ -96,15 +96,15 @@ void ofApp::draw() {
 	//// GUI
 	// create ofMatrix4x4 variable in which we will store future deformations
 	ofMatrix4x4 transformMatrix;
-
+    
 	// translate to the center of application
 	transformMatrix = ofMatrix4x4::newTranslationMatrix(ofVec3f(30, 90));
-
+    
 	ofPushMatrix();
-
+    
 	// apply transform
 	ofMultMatrix(transformMatrix);
-
+    
 	// draw UI elements
 	float xOffset = 0;
 		// rotation toggle
@@ -132,7 +132,7 @@ void ofApp::draw() {
 	fontLarge.drawString("Select color", 0, xOffset);
 	colorDropDown.draw(0, xOffset+20, transformMatrix);
 	xOffset += 100;
-
+    
 	ofPopMatrix();
 	//// END GUI
 }

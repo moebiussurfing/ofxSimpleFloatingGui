@@ -25,6 +25,15 @@ public:
 
     SliderB();
 
+	//void setVisibleBall(bool b)
+	//{
+	//	bBallHidden = !b;
+	//}
+	void setValue(float f)
+	{
+		value = f;
+	}
+
 private:
     // variables
         // value
@@ -39,6 +48,8 @@ private:
     ofRectangle boundingBoxRect, boundingBoxEll;
     float       diff;
     ofVec2f     mousePosStart;
+
+	//bool bBallHidden = false;
 };
 
 #endif // SliderB_H

@@ -118,8 +118,15 @@ float SliderB::draw(float posX, float posY, ofMatrix4x4 transMatrix){
         ofDrawRectRounded(posSlider.x, posY, sliderW - (posSlider.x - posX), sliderH, 10);
 
         // draw ellipse
-        ofSetColor(ellColor);
-        ofDrawCircle(posSlider, sliderR);
+		//if (!bBallHidden)
+		{
+			ofSetColor(ellColor);
+			ofDrawCircle(posSlider, sliderR);
+
+			//trying rectangle form
+			//float _gap = 20;
+			//ofDrawRectangle(posSlider.x- _gap, posSlider.y- sliderH*0.5, 2*_gap, sliderH);
+		}
 
     // reset style
     ofPopStyle();

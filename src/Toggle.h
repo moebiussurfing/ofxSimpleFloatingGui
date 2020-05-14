@@ -16,10 +16,12 @@ public:
     void setup(bool _value, ofColor _trueColor);
         // draw
     bool draw(float posX, float poxY, ofMatrix4x4 transMatrix);
-        // getters
-    bool getValue();
 
-    Toggle();
+	//TODO:
+    bool getValue();
+	void setValue(bool b);
+    
+	Toggle();
 private:
     // variables
         // value

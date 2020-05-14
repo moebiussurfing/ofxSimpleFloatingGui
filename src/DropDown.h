@@ -21,6 +21,8 @@ public:
 	// getter
 	string getValueString();
 	int getValueInt();
+	void setValueInt(int i);
+
 	float getHeight();
 	// setter
 	void setTextColor(ofColor col);

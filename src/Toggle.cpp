@@ -104,7 +104,12 @@ bool Toggle::draw(float posX, float posY, ofMatrix4x4 transMatrix){
 	return value;
 }
 
+
+//TODO:
 /// getter
 bool Toggle::getValue(){
     return value;
+}
+void Toggle::setValue(bool b){
+	value = b;
 }

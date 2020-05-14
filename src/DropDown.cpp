@@ -187,6 +187,9 @@ string DropDown::getValueString() {
 int DropDown::getValueInt() {
 	return currInd;
 }
+void DropDown::setValueInt(int i) {
+	currInd = i;
+}
 
 /// getter for height
 float DropDown::getHeight() {

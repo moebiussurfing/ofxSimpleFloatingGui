@@ -139,11 +139,15 @@ float SliderB::draw(float posX, float posY, ofMatrix4x4 transMatrix){
     return value;
 }
 
-/// getter for value
+
+//TODO:
 float SliderB::getValue(){
     return value;
 }
-
+void SliderB::setValue(float f)
+{
+	value = f;
+}
 float SliderB::getHeight()
 {
 	return 2 * sliderR;
